@@ -37,27 +37,21 @@ header {
     overflow-y: hidden;
 }
 
-#sidebar::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
 }
 
-#sidebar::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
+::-webkit-scrollbar-track {
+background: transparent; 
 }
 
-#sidebar::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 
-#sidebar::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.8);
-}
-
-#sidebar {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 button {
@@ -104,16 +98,15 @@ footer {
     width: 100%;
 }
 
-/* Stardust particle styles */
 .stardust {
     position: absolute;
-    width: 4px;       /* Fixed size */
-    height: 4px;      /* Fixed size */
+    width: 4px;    
+    height: 4px;    
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.8);
     pointer-events: none;
     animation: sparkle 500ms forwards;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.9);  /* Create a sparkling glow */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.9); 
 }
 
 @keyframes sparkle {
