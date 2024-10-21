@@ -10,7 +10,7 @@ html, body {
     font-family: Arial, sans-serif;
     color: white;
     background-image: url('https://r4.wallpaperflare.com/wallpaper/428/45/96/digital-illustration-landscape-artwork-sunset-hd-wallpaper-540d6f598dffe58c53773c5360ea220e.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
