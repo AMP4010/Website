@@ -1,0 +1,144 @@
+:root {
+    --button-color: rgba(255, 255, 255, 0.2);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/428/45/96/digital-illustration-landscape-artwork-sunset-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: transparent;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#sidebar {
+    width: 200px;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: calc(85% - 80px);
+    overflow-y: hidden;
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 200ms ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+main {
+    margin-left: 220px;
+    margin-top: 80px;
+    padding: 30px 30px 40px;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content h2 {
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Stardust particle styles */
+.stardust {
+    position: absolute;
+    width: 4px;       /* Fixed size */
+    height: 4px;      /* Fixed size */
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    animation: sparkle 500ms forwards;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.9);  /* Create a sparkling glow */
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    20% {
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+    40% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+    60% {
+        opacity: 0.4;
+        transform: scale(1.2);
+    }
+    80% {
+        opacity: 0.2;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
